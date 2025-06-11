@@ -1,0 +1,105 @@
+---
+layout: 'base.html'
+description: 'Meta description for the page'
+metaTitle: 'Services'
+tagTitle: 'Services'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/services.css'
+permalink: 'services/'
+eleventyNavigation:
+    key: Services
+    order: 200
+    
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Our Services</h1>
+  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+
+</section>
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-1852">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png" alt="appliance" width="364" height="375">
+            </picture>
+            <!--Bottom right image-->
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png" alt="appliance" width="388" height="388">
+            </picture>
+            <picture class="cs-floater">
+                <img class="cs-floater-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/weights.svg" alt="icon" width="59" height="48">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">What Services You Can Get From Us</h2>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Kick Boxing</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-arrow-body.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Personal Training</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-arrow-body.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Body Builder</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-arrow-body.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Group Workout</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-arrow-body.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Muscle Building</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-arrow-body.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">Get It Done <br> With Us Today</h2>
+    <p>
+            Say something catchy, informative, and encouraging to click the button to go to the contact page.  I like to add these to the bottom of all pages.
+        </p>
+    <a href="/contact.html" class="button-solid">Free Estimate</a>
+  </div>
+  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>

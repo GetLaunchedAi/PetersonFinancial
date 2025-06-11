@@ -1,0 +1,362 @@
+---
+layout: 'base.html'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'Pixel Perfect Websites'
+preloadImg: '/images/landing1.jpg'
+preloadCSS: '/css/local.css'
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero">
+  <div class="cs-container">
+    <div class="cs-flex-group">
+      <span class="cs-topper">Trusted Financial Guidance
+
+</span>
+      <h1 class="cs-title">Your Financial Future, Guided by Experts</h1>
+      <p class="cs-text">
+        Let us help you build a financial future that reflects your goals, protects your loved ones, and brings peace of mind.
+      </p>
+      <a href="" class="cs-button-solid">Explore More</a>
+      <a href="" class="cs-button-transparent">
+        <img
+          class="cs-img"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
+          alt="play icon"
+          width="17"
+          height="17"
+/>
+        Learn More
+      </a>
+    </div>
+  </div>
+
+  <!-- Background Image -->
+  {% image './src/images/landing1.jpg', 'mountains', 'cs-picture', 'eager', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                  Services In Hero                    -->
+<!-- ============================================ -->
+
+<section id="services" class="services">
+  <!-- Get Icons From flaticon.com -->
+  <div class="card">
+    <picture>
+      <img
+        aria-hidden="true"
+        decoding="async"
+        src="/assets/svgs/service1.svg"
+        alt="appliance"
+        width="48"
+        height="48"
+/>
+    </picture>
+    <h2>Personalized Financial Planning</h2>
+    <p>We create customized plans for retirement, estate, and long-term wealth goals—designed to grow with you and your family.
+
+</p>
+  </div>
+  <div class="card">
+    <picture>
+      <img
+        aria-hidden="true"
+        decoding="async"
+        src="/assets/svgs/service2.svg"
+        alt="appliance"
+        width="48"
+        height="48"
+/>
+    </picture>
+    <h2>Strategic Investment Management</h2>
+    <p>Our investment approach is built around your objectives—balancing risk and opportunity through diversified portfolios, tax-efficient strategies, and ongoing market guidance.
+
+</p>
+  </div>
+  <div class="card">
+    <picture>
+      <img
+        aria-hidden="true"
+        decoding="async"
+        src="/assets/svgs/service3.svg"
+        alt="appliance"
+        width="48"
+        height="48"
+/>
+    </picture>
+    <h2>Business & Executive Planning</h2>
+    <p>We advise business owners and executives on compensation, succession, and retirement strategies—tailored to support long-term growth and employee well-being.</p>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/About/AboutImg1.png', 'house', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/About/AboutHeadshot.png', 'house', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">About Peterson Financial</h2>
+      <p class="cs-text">
+        In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis
+        libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei
+        aptent taciti sociosqu ad litora torquent per.
+      </p>
+      <p class="cs-text">
+        In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis
+        libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei
+        aptent taciti sociosqu ad litora torquent per.
+      </p>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+          In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet
+          imperdiet for mind.
+        </p>
+        <span class="cs-name">Scott Peterson</span>
+        <span class="cs-job">CEO-Founder</span>
+        <img
+          class="cs-quote-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
+          alt="gavel"
+          width="136"
+          height="77"
+/>
+      </div>
+      <a href="/about" class="button-solid">More About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--            Information on a Single Service             -->
+<!-- ============================================ -->
+
+<section id="sbs-r">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/Executive/ExecutiveInfoImg.jpg', 'house', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">SEO Ranking</span>
+      <h2 class="cs-title">Financial Planning and Wealth Management Services for Individuals and Business Owners
+</h2>
+      <p class="cs-text">
+        Our team offers personalized guidance in retirement planning, tax-efficient investing, estate planning, and business succession. We work closely with individuals, families, and business owners to build wealth, minimize risk, and protect what matters most.
+      </p>
+      <p class="cs-text">
+Our process begins with a comprehensive review of your financial situation—covering retirement planning, investment strategy, estate planning, tax efficiency, and risk management. We tailor every plan to your specific goals, whether you're a business owner preparing for succession, a family planning for generational wealth transfer, or an individual optimizing your retirement income. With a focus on long-term financial security and strategic wealth management, we provide the clarity and confidence you need to make informed decisions at every stage of life.
+      </p>
+      <a href="" class="button-solid">Learn More About Thing</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-1852">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="./images/Services/ServicesImg1.png">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/images/Services/ServicesImg1.png">
+                <img loading="lazy" decoding="async" src="/images/Services/ServicesImg1.png" alt="appliance" width="364" height="375">
+            </picture>
+            <!--Bottom right image-->
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/images/Services/ServicesImg2.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/images/Services/ServicesImg2.jpg">
+                <img loading="lazy" decoding="async" src="/images/Services/ServicesImg2.jpg" alt="appliance" width="388" height="388">
+            </picture>
+            <picture class="cs-floater">
+                <img class="cs-floater-icon" loading="lazy" decoding="async" src="/images/Services/ServicesSVG.svg" alt="icon" width="59" height="48">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">What Services You Can Get From Us</h2>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Comprehensive Financial Planning</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-arrow-body.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Investment Strategies Invest Planning</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-arrow-body.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Estate and Retirement Planning</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-arrow-body.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Executive Compensation</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-arrow-body.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Multi Generational Planning</h3>
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-arrow-body.svg" alt="icon" width="32" height="32">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+                                
+
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews">
+  <div class="cs-container">
+    <span class="cs-topper">Our Reviews</span>
+    <h2 class="cs-title">Words From Our Customers</h2>
+    <p class="cs-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis
+      sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum
+      dolor sit amet.
+    </p>
+    <ul class="cs-card-group">
+      <!-- Review 1 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
+          alt="profile picture"
+          width="80"
+          height="80"
+/>
+        <p class="cs-item-p">
+          Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna
+          pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa
+          urna, volutpat orci imperdiet eget eget.
+        </p>
+        <span class="cs-reviewer">
+          Jon Doe
+          <span class="cs-desc">Homeowner</span>
+        </span>
+        <img
+          class="cs-item-stars"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+          alt="stars"
+          width="96"
+          height="16"
+/>
+      </li>
+      <!-- Review 2 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
+          alt="profile picture"
+          width="80"
+          height="80"
+/>
+        <p class="cs-item-p">
+          Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna
+          pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa
+          urna, volutpat orci imperdiet eget eget.
+        </p>
+        <span class="cs-reviewer">
+          Jane Doe
+          <span class="cs-desc">Homeowner</span>
+        </span>
+        <img
+          class="cs-item-stars"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+          alt="stars"
+          width="96"
+          height="16"
+/>
+      </li>
+    </ul>
+    <a aria-label="read more reviews" href="/reviews" class="button-solid">Read More</a>
+  </div>
+</section>
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">
+      Get It Done <br/>
+      With Us Today
+    </h2>
+    <p>
+      Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add
+      these to the bottom of all pages.
+    </p>
+    <a href="/contact" class="button-solid">Get an Estimate Now</a>
+  </div>
+  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window
+      .netlifyIdentity
+      .on('init', (user) => {
+        if (!user) {
+          window
+            .netlifyIdentity
+            .on('login', () => {
+              document.location.href = '/admin/';
+            });
+        }
+      });
+  }
+</script>
