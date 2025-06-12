@@ -32,22 +32,26 @@
         <nav id="navbar-menu" aria-label="main navigation">
             <ul>
                 {%- for entry in navPages if entry.title != ' Navigation Name ' %}
-                
+
                 <li class="{% if entry.title == 'Services' %}dropdown{% endif %}">
-                    <a {% if entry.url==page.url %} class="active" {% endif %} href="{{ entry.url }}">
+                    {% if entry.title == 'Services' %}
+                    <a class="dropdown-toggle" role="button" tabindex="0">
                         {{ entry.title }}
                     </a>
-
-                    {% if entry.title == 'Services' %}
-                    <ul class="dropdown-menu" >
+                    <ul class="dropdown-menu">
                         <li><a href="/estate-planning" style="color:black">Estate Planning</a></li>
                         <li><a href="/executive-compensation" style="color:black">Executive Compensation</a></li>
                         <li><a href="/financial-planning" style="color:black">Financial Planning</a></li>
                         <li><a href="/investment-planning" style="color:black">Investment Planning</a></li>
                         <li><a href="/retirement-planning" style="color:black">Retirement Planning</a></li>
                     </ul>
+                    {% else %}
+                    <a {% if entry.url==page.url %} class="active" {% endif %} href="{{ entry.url }}">
+                        {{ entry.title }}
+                    </a>
                     {% endif %}
                 </li>
+
                 {%- endfor %}
             </ul>
         </nav>
@@ -65,21 +69,21 @@
         </button>
     </div>
     <script>
-          document.addEventListener("DOMContentLoaded", function () {
-    const toggles = document.querySelectorAll(".dropdown-toggle");
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggles = document.querySelectorAll(".dropdown-toggle");
 
-    toggles.forEach((toggle) => {
-      toggle.addEventListener("click", function (e) {
-        e.preventDefault();
-        const parent = this.closest(".dropdown");
-        parent.classList.toggle("open");
+            toggles.forEach((toggle) => {
+                toggle.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const parent = this.closest(".dropdown");
+                    parent.classList.toggle("open");
 
-        // Optional: collapse other open dropdowns
-        document.querySelectorAll(".dropdown").forEach((item) => {
-          if (item !== parent) item.classList.remove("open");
+                    // Optional: collapse other open dropdowns
+                    document.querySelectorAll(".dropdown").forEach((item) => {
+                        if (item !== parent) item.classList.remove("open");
+                    });
+                });
+            });
         });
-      });
-    });
-  });
     </script>
 </div>
