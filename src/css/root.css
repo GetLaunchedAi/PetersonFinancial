@@ -264,7 +264,7 @@
     width: 100%;
     border-radius: 0 0 0.375em 0.375em;
     z-index: -1;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-color: #fff;
     top: 3.7rem;
@@ -528,63 +528,84 @@
 }
 
 
-/*-- -------------------------- -->
-<---        Dropdown Styles         -->
-<--- -------------------------- -*/
-/* Dropdown container */
+/* --------------------------
+   Dropdown Container
+-------------------------- */
 nav ul li.dropdown {
     position: relative;
+    z-index: 10;
 }
 
-
-/* Hidden by default */
+/* --------------------------
+   Dropdown Menu Base Styles
+-------------------------- */
 nav ul li .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-10px);
+    background-color: white;
+    padding: 0.5rem 1rem;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 0.5rem 1rem;
-    min-width: 300px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    /* Hidden by default */
     opacity: 0;
     visibility: hidden;
     transform-origin: top;
     transition: all 0.3s ease;
-    z-index: 999;
-    border:none;
+    z-index: 9999;
 }
 
-/* Show dropdown on hover */
-nav ul li.dropdown:hover .dropdown-menu {
+/* --------------------------
+   Hover Behavior (Desktop)
+-------------------------- */
+@media (min-width: 729px) {
+    nav ul li.dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* --------------------------
+   Open Class Behavior (JS)
+-------------------------- */
+nav ul li.dropdown.open .dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
 }
 
-/* Optional: animate with slight slide */
-nav ul li .dropdown-menu {
-    transform: translateX(-50%) translateY(-10px);
+/* --------------------------
+   Prevent Overflow Clipping
+-------------------------- */
+#navbar-menu,
+#navbar-menu ul,
+#navigation {
+    overflow: visible;
 }
 
-/* Dropdown links */
+/* --------------------------
+   Dropdown Links
+-------------------------- */
 .dropdown-menu li {
-    text-decoration: none;
+    margin: 1rem 2rem;
+}
+
+.dropdown-menu a {
     color: black;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-
-
+    text-decoration: none;
 }
 
 .dropdown-menu a:hover {
     text-decoration: underline;
 }
+
 
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
@@ -882,6 +903,15 @@ nav ul li .dropdown-menu {
   body.dark-mode #footer {
     background: #061623;
   }
+  body.dark-mode nav .dropdown-menu {
+    background-color: var(--medium);
+    
+  }
+  body.dark-mode nav .dropdown-menu li a {
+    color:white;
+    
+  }
+
 }
 
 /*-- -------------------------- -->

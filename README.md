@@ -343,7 +343,7 @@ One thing you may want to do though, is change the logo of the CMS, for a more p
 ```
 local_backend: true
 # change url to a link to the image you want to use, no file paths, must be a URL
-logo_url: https://d33wubrfki0l68.cloudfront.net/c89899bad974606ce0e0f5d5a95842dc787dcb56/7fe98/assets/images/logo-blue.png
+logo_url: https://ik.imagekit.io/arpet16x0/ChatGPT%20Image%20Jun%207,%202025,%2007_43_31%20PM.png?updatedAt=1749339865081
 ```
 
 Change the logo URL to the URL of your clients logo. It won't take an image file path. Open your client's website and inspect the code, click on the logo, hover over it's link in the html in the dev tools, and click the live link to open the image in a new tab. Copy and paste that link and replace the one that's in front of the "logo_url:". When the client logs into the Netlify CMS it will show up above the login button.

@@ -23,7 +23,7 @@
   }
   #navigation .logo {
     display: inline-block;
-    height: 1.875em;
+    height: 3.5em;
     width: auto;
   }
   #navigation .logo img {
@@ -35,6 +35,7 @@
   }
   #navigation .logo .dark {
     display: block;
+    
   }
   #navigation .hamburger-menu {
     position: absolute;
