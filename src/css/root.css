@@ -593,8 +593,9 @@ nav ul li.dropdown.open .dropdown-menu {
 /* --------------------------
    Dropdown Links
 -------------------------- */
-.dropdown-menu li {
+.dropdown-menu li{
     margin: 1rem 2rem;
+
 }
 
 .dropdown-menu a {
