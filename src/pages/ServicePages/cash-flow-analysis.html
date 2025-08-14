@@ -1,71 +1,45 @@
 ---
 layout: 'base.html'
-description: "Meta description for the page"
-metaTitle: 'Title that shows up on social OG tags'
-tagTitle: 'Title that shows up on google, and is concatenated with | {{ client.name }}'
-preloadImg: '/images/imageName.format'
+description: 'Real estate cash flow analysis for rental and investment properties in Southwest Michigan. Pro forma underwriting, NOI, cap rate, DSCR, IRR, and sensitivity modeling by Infinity Investment Property Solutions LLC.'
+metaTitle: 'Real Estate Cash Flow Analysis | Infinity Investment Property Solutions LLC'
+tagTitle: 'Cash Flow Analysis'
+title: 'Cash Flow Analysis'
+preloadImg: '/images/EstateBanner.jpg'
 preloadCSS: '/css/services.css'
 permalink: 'cash-flow-analysis/'
 eleventyNavigation:
-parent: Services
-key: Navigation Name
-order: 1000
+  key: Cash Flow Analysis
+  parent: Services
+  order: 200
 ---
-<!-- ============================================ -->
-<!--                 Content Page                 -->
-<!-- ============================================ -->
-
-<!-- ============================================ 
-    This Stitch is used for content heavy interior pages
-    that have no design or layout.  Often times these are 
-    content silos where you talk extensively about a topic
-    to educate your visitors and rank on Google for the 
-    content.  These are great for pages that have a TON
-    of content.  Design isn't important here, it's all 
-    about making the content accessible and easy to read.
-================================================= -->
-
 <!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
-<div id="banner-1401">
-    <div class="cs-container">
-        <span class="cs-int-title">Cash Flow Analysis</span>
-        <div class="cs-breadcrumbs" style="font-weight: bold">
-            <a href="" class="cs-link">Home</a>
-            <a href="" class="cs-link cs-active">Cash Flow Analysis</a>
-        </div>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/images/Estate/EstateBanner.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/images/Estate/EstateBanner.jpg">
-        <img decoding="async" src="/images/Estate/EstateBanner.jpg" alt="people laughing" width="1280" height="568"
-            aria-hidden="true">
-    </picture>
-</div>
+<section id="int-hero">
+    <h1 id="home-h">Cash Flow Analysis</h1>
+    {% image './src/images/Estate/EstateBanner.jpg', 'cash flow analysis for rental & investment properties', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+</section>
 
-<section id="content-page-1401">
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1402">
     <div class="cs-container">
         <div class="cs-image-group">
             <div class="cs-flex">
                 <picture class="cs-background">
-                    <!--Mobile Image-->
                     <source media="(max-width: 600px)" srcset="/images/Estate/EstateInfoImg.png">
-                    <!--Tablet and above Image-->
                     <source media="(min-width: 601px)" srcset="/images/Estate/EstateInfoImg.png">
-                    <img loading="lazy" decoding="async" src="/images/Estate/EstateInfoImg.png" alt="people" width="542"
-                        height="728">
+                    <img loading="lazy" decoding="async" src="/images/Estate/EstateInfoImg.png" alt="cash flow worksheet and pro forma modeling" width="542" height="728">
                 </picture>
                 <div class="cs-box">
                     <img class="cs-box-icon" loading="lazy" decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="people" width="60"
-                        height="60">
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="analysis icon"
+                        width="60" height="60">
                     <span class="cs-desc">
-                        We’ve Over 26 Years of Experience
+                        Data-Driven Returns Since 2019
                     </span>
                 </div>
             </div>
@@ -73,109 +47,169 @@ order: 1000
                 <li class="cs-item">
                     <h3 class="cs-h3">
                         <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32"
-                            height="32">
-                        Quality Services
+                            src="https://csimg.nyc3.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32" height="32">
+                        Accurate, Audit-Ready Numbers
                     </h3>
                     <p class="cs-item-text">
-                        There are many variations of but the majority is simply free suffered.
+                        We normalize income and expenses to deliver reliable NOI, cap rate, cash-on-cash, DSCR, IRR, and break-even occupancy.
                     </p>
                 </li>
                 <li class="cs-item">
                     <h3 class="cs-h3">
                         <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon"
-                            width="32" height="32">
-                        Quality Services
+                            src="https://csimg.nyc3.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon" width="32" height="32">
+                        Scenario & Sensitivity Modeling
                     </h3>
                     <p class="cs-item-text">
-                        There are many variations of but the majority is simply free suffered.
+                        We test rent growth, vacancy, CapEx, interest rates, and LTV to show risk/return under multiple financing structures.
                     </p>
                 </li>
             </ul>
         </div>
         <div class="cs-content">
-            <h1 class="cs-title">Gain Clarity. Create Momentum. <span class="cs-color">Master Your Money</span></h1>
+            <hr />
+            <br />
+            <br />
 
-            <h2>Why Cash Flow Analysis Matters</h2>
+            <h1 class="cs-title">Cash Flow Analysis for <span class="cs-color">Southwest Michigan</span> Rentals & Investments</h1>
+
+            <br />
+            <h3>Underwrite with Confidence—Before You Buy or Refi</h3>
+            <br />
             <p>
-                Understanding where your money comes from—and where it’s going—is the foundation of long-term financial
-                success. At Peterson Financial, our cash flow analysis helps you gain full visibility into your income,
-                expenses, savings, and spending patterns. With this insight, we help you make smarter, more intentional
-                financial decisions.
+                Infinity Investment Property Solutions LLC provides professional cash flow analysis for single-family, multi-family, and small commercial assets. We build clean pro formas, verify assumptions, model debt service, and convert raw data into clear recommendations you can act on—buy, hold, improve, or exit.
             </p>
-            <p>
-                Whether you're building wealth, planning for retirement, or managing business income, our team works
-                with you to develop a personalized plan that optimizes your cash flow and aligns with your financial
-                goals.
-            </p>
+            <br />
+            <hr />
+            <br />
 
-            <h3>The Benefits of Cash Flow Analysis:</h3>
-            <ol>
-                <li>Identifies income leaks and unnecessary expenses</li>
-                <li>Improves budgeting accuracy and financial control</li>
-                <li>Ensures alignment with short- and long-term financial goals</li>
-                <li>Helps maintain adequate liquidity and avoid cash shortfalls</li>
-                <li>Supports debt reduction and strategic savings</li>
-            </ol>
+            <div class="desktop-only">
+                <h3>What We Analyze</h3>
+                <ol>
+                    <li>Gather documents: rent roll, T-12, utility bills, tax records, insurance, lease terms</li>
+                    <li>Normalize revenue: market rents, loss-to-lease, vacancy/credit loss, other income</li>
+                    <li>Right-size expenses: taxes, insurance, utilities, maintenance, management, reserves</li>
+                    <li>Model financing: rate/term, amortization, IO periods, LTV/LTC, refinance and sale</li>
+                    <li>Stress test: vacancy shocks, rate changes, CapEx schedules, rent growth scenarios</li>
+                    <li>Report: KPIs (NOI, DSCR, CoC, IRR/NPV), break-even, and a clear action plan</li>
+                </ol>
 
-            <h4>What Our Cash Flow Planning Process Includes</h4>
-            <ul>
-                <li>Detailed income and expense breakdowns</li>
-                <li>Customized monthly cash flow reports</li>
-                <li>Spending and savings pattern analysis</li>
-                <li>Liquidity and emergency fund planning</li>
-                <li>Ongoing support to monitor and improve financial health</li>
-            </ul>
-
+                <h4>What You Get</h4>
+                <ul>
+                    <li>Excel model + PDF summary with assumptions and sensitivity tables</li>
+                    <li>10-year pro forma with cap-ex reserves and debt schedule</li>
+                    <li>Valuation snapshots: cap rate, price per door, and return metrics</li>
+                    <li>Optional rent comps and renovation ROI recommendations</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="cs-bubbles" aria-hidden="true"></div>
 </section>
 
 <!-- ============================================ -->
-<!--                Side By Side                  -->
+<!--                  Services                    -->
 <!-- ============================================ -->
 
-<section id="sbs-2291">
+<section id="services-563">
     <div class="cs-container">
-        <!-- Left Content Section-->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
+            <source media="(min-width: 601px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
+            <img loading="lazy" decoding="async" src="/images/Estate/EstateSidebySideImg.jpg" alt="side-by-side cash flow scenarios and sensitivity chart" width="630" height="528" aria-hidden="true">
+        </picture>
         <div class="cs-content">
-            <span class="cs-topper">Featured service</span>
-            <h2 class="cs-title">Turn Financial Chaos Into Financial Clarity</h2>
+            <span class="cs-topper">Featured Analysis</span>
+            <br />
+            <h3 class="cs-h3">Unlock ROI with <span class="cs-color">Data-Backed Underwriting</span></h3>
             <p class="cs-text">
-                At Peterson Financial, we turn complex financial data into actionable insights. Our cash flow analysis
-                service provides you with a clear understanding of your money habits and helps you build a solid
-                foundation for savings, investing, and long-term success.
+                Send your rent roll and T-12. We’ll return a 10-year pro forma, financing scenarios, and sensitivity tables so you can compare offers, plan CapEx, and close with confidence.
             </p>
-            <div class="cs-features">
-                <h3 class="cs-h3">Tools That Drive Confidence and Control</h3>
-                <ul class="cs-ul">
-                    <li class="cs-li">Easy-to-read cash flow snapshots</li>
-                    <li class="cs-li">Monthly trend tracking for smarter financial habits</li>
-                    <li class="cs-li">Personalized strategies to meet savings and income goals</li>
-                </ul>
-            </div>
-            <a class="cs-button-solid" aria-label="learn more about our programs" href="/contact"
-                style="color:white">Start Your Cash Flow Review</a>
-        </div>
-        <!-- Right Image Section -->
-        <div class="cs-image-group">
-            <!--Floating Box-->
-            <div class="cs-box">
-                <span class="cs-number">12K+</span>
-                <div class="cs-flex">
-                    <h3 class="cs-heading">Square Meters Paved</h3>
-                    <span class="cs-desc">Hardscaping projects that combine beauty and functionality.</span>
-                </div>
-            </div>
-            <!--Image-->
-            <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
-                <source media="(min-width: 601px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
-                <img loading="lazy" decoding="async" src="/images/Estate/EstateSidebySideImg.jpg" alt="meeting"
-                    width="630" height="630" aria-hidden="true">
-            </picture>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+                    KPIs: NOI, DSCR, CoC, IRR/NPV, break-even occupancy
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+                    Debt options: fixed/ARM, IO, refi timing, LTV/LTC comparisons
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+                    Sensitivity: rent growth, vacancy, rates, CapEx, exit cap
+                </li>
+            </ul>
+            <a href="/contact" class="cs-button-solid">Request a Cash Flow Analysis</a>
         </div>
     </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-254">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">FAQ’s</span>
+            <h2 class="cs-title">Cash Flow Analysis FAQs</h2>
+            <p class="cs-text">
+                Learn how our cash flow analysis works, what we need from you, and how quickly we can deliver results.
+            </p>
+        </div>
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">What inputs do you need to start?</button>
+                    <p class="cs-item-p">
+                        Rent roll, T-12 (or last 12 months of income/expenses), tax and insurance bills, utility averages, current debt terms (if any), and your target hold period.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">Which metrics do you provide?</button>
+                    <p class="cs-item-p">
+                        NOI, cap rate, DSCR, cash-on-cash return, IRR/NPV, equity multiple, and break-even occupancy—plus year-by-year cash flows and debt schedules.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">Do you include financing scenarios?</button>
+                    <p class="cs-item-p">
+                        Yes. We compare multiple loan structures (rate/term, IO, LTV), model refinance options, and show how each impacts DSCR, cash flow, and IRR over time.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">How fast is the turnaround?</button>
+                    <p class="cs-item-p">
+                        Typical analyses are completed quickly once we have documents. We’ll confirm timing when we receive your files and scope.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">What deliverables will I receive?</button>
+                    <p class="cs-item-p">
+                        A downloadable Excel model and a PDF summary with assumptions, KPIs, and sensitivity tables. We can also walk you through the results on a call.
+                    </p>
+                </li>
+            </ul>
+            <div class="cs-cta">
+                <h3 class="cs-h3">Want Clarity on Your Numbers?</h3>
+                <p class="cs-cta-p">
+                    Share your rent roll and expenses and we’ll build a clear, decision-ready analysis.
+                </p>
+                <a href="/contact" class="cs-button-solid">Get Your Analysis</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+                item.classList.toggle('active')
+            }
+            item.addEventListener('click', onClick)
+        }
+    </script>
 </section>

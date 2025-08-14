@@ -1,192 +1,213 @@
 ---
-layout: 'base.html' 
-description: "Meta description for the page"
-metaTitle: 'Title that shows up on social OG tags'
-tagTitle: 'Title that shows up on google, and is concatenated with | {{ client.name }}'
-preloadImg: '/images/imageName.format'
+layout: 'base.html'
+description: 'Retirement planning made simple: savings targets, Social Security timing, pension options, healthcare/Medicare costs, tax-smart withdrawals, and steady income planning by Peterson Financial.'
+metaTitle: 'Retirement Planning | Peterson Financial'
+tagTitle: 'Retirement Planning'
+title: 'Retirement Planning'
+preloadImg: '/images/EstateBanner.jpg'
 preloadCSS: '/css/services.css'
 permalink: 'retirement-planning/'
 eleventyNavigation:
-    parent: Services
-    key: Navigation Name
-    order: 1000
+  key: Retirement Planning
+  parent: Services
+  order: 200
 ---
-<!-- ============================================ -->
-<!--                 Content Page                 -->
-<!-- ============================================ -->
-
-<!-- ============================================ 
-    This Stitch is used for content heavy interior pages
-    that have no design or layout.  Often times these are 
-    content silos where you talk extensively about a topic
-    to educate your visitors and rank on Google for the 
-    content.  These are great for pages that have a TON
-    of content.  Design isn't important here, it's all 
-    about making the content accessible and easy to read.
-================================================= -->
-
 <!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
-<div id="banner-1401">
-    <div class="cs-container">
-        <span class="cs-int-title">Estate Planning</span>
-        <div class="cs-breadcrumbs" style="font-weight: bold">
-            <a href="" class="cs-link">Home</a>
-            <a href="" class="cs-link cs-active">Estate Planning</a>
-        </div>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/images/Estate/EstateBanner.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/images/Estate/EstateBanner.jpg">
-        <img decoding="async" src="/images/Estate/EstateBanner.jpg" alt="people laughing" width="1280" height="568"
-            aria-hidden="true">
-    </picture>
-</div>
-
-<section id="content-page-1401">
-    <div class="cs-container">
-        <div class="cs-image-group">
-            <div class="cs-flex">
-                <picture class="cs-background">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/images/Estate/EstateInfoImg.png">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/images/Estate/EstateInfoImg.png">
-                    <img loading="lazy" decoding="async" src="/images/Estate/EstateInfoImg.png" alt="people" width="542"
-                        height="728">
-                </picture>
-                <div class="cs-box">
-                    <img class="cs-box-icon" loading="lazy" decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="people" width="60"
-                        height="60">
-                    <span class="cs-desc">
-                        We’ve Over 26 Years of Experience
-                    </span>
-                </div>
-            </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <h3 class="cs-h3">
-                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32"
-                            height="32">
-                        Quality Services
-                    </h3>
-                    <p class="cs-item-text">
-                        There are many variations of but the majority is simply free suffered.
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <h3 class="cs-h3">
-                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon"
-                            width="32" height="32">
-                        Quality Services
-                    </h3>
-                    <p class="cs-item-text">
-                        There are many variations of but the majority is simply free suffered.
-                    </p>
-                </li>
-            </ul>
-        </div>
-        <div class="cs-content">
-            <h1 class="cs-title">Protect What Matters Most: <span class="cs-color">Your Family and Legacy</span></h1>
-            <h2>Why Estate Planning Matters
-
-            </h2>
-            <p>
-                Estate planning isn't just for the wealthy—it's for everyone who wants peace of mind. Whether you're
-                securing your family's future, preserving a lifetime of hard work, or preparing for the unexpected, a
-                clear estate plan ensures your wishes are honored and your loved ones are protected.
-            </p>
-            <p>
-                It can help minimize taxes, avoid lengthy probate processes, and reduce the burden on your family during
-                difficult times. A well-crafted estate plan gives you control over how your assets are managed and
-                distributed. It also allows you to designate trusted individuals to make financial or medical decisions
-                on your behalf if you're ever unable to do so.
-            </p>
-            <h3>The Benefits of Estate Planning:</h3>
-            <ol>
-                <li>Prevents family disputes by clearly outlining asset distribution.
-
-                </li>
-                <li>Save on taxes and legal fees.
-
-                </li>
-                <li>Ensures guardianship for minors or dependents.
-
-                </li>
-            </ol>
-            <h4>What a Comprehensive Estate Plan Includes</h4>
-            <ul>
-                <li>A legally binding will to guide asset distribution</li>
-                <li>A revocable living trust to avoid probate and maintain privacy</li>
-                <li>Beneficiary designations aligned with your goals</li>
-                <li>A letter of intent to clarify personal wishes or instructions</li>
-
-            </ul>
-        </div>
-    </div>
-    <div class="cs-bubbles" aria-hidden="true"></div>
+<section id="int-hero">
+  <h1 id="home-h">Retirement Planning You Can Understand</h1>
+  {% image './src/images/Estate/EstateBanner.jpg', 'retirement planning and income strategy by Peterson Financial', '', 'lazy', '(max-width: 850px) 850px, 1920px' %}
 </section>
 
 <!-- ============================================ -->
-<!--                Side By Side                  -->
+<!--                 Content Page                 -->
 <!-- ============================================ -->
 
-<section id="sbs-2291">
-    <div class="cs-container">
-        <!-- Left Content Section-->
-        <div class="cs-content">
-            <span class="cs-topper">Featured service</span>
-            <h2 class="cs-title">Creating a Clear and Secure Estate Plan</h2>
-            <p class="cs-text">
-                Estate planning is one of the most powerful tools for protecting your wealth, honoring your wishes, and
-                supporting your family’s future. Our personalized estate planning services help you avoid probate,
-                reduce tax burdens, and ensure your loved ones are cared for—no matter what lies ahead.
-
-            </p>
-            <div class="cs-features">
-                <h3 class="cs-h3">Designed for Clarity, Protection, and Peace of Mind</h3>
-                <ul class="cs-ul">
-                    <li class="cs-li">Personalized legal documents drafted by professionals
-
-                    </li>
-                    <li class="cs-li">Step-by-step guidance through every decision
-
-                    </li>
-                    <li class="cs-li">Support with beneficiary coordination and asset alignment
-
-                    </li>
-                </ul>
-            </div>
-            <a class="cs-button-solid" aria-label="learn more about our programs" href="" style="color:white">Read More</a>
+<section id="content-page-1402">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <div class="cs-flex">
+        <picture class="cs-background">
+          <source media="(max-width: 600px)" srcset="/images/Estate/EstateInfoImg.png">
+          <source media="(min-width: 601px)" srcset="/images/Estate/EstateInfoImg.png">
+          <img loading="lazy" decoding="async" src="/images/Estate/EstateInfoImg.png" alt="retirement income worksheet and timeline" width="542" height="728">
+        </picture>
+        <div class="cs-box">
+          <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="planning icon" width="60" height="60">
+          <span class="cs-desc">
+            Clear Steps • Steady Income
+          </span>
         </div>
-        <!-- Right Image Section -->
-        <div class="cs-image-group">
-            <!--Floating Box-->
-            <div class="cs-box">
-                <span class="cs-number">12K+</span>
-                <div class="cs-flex">
-                    <h3 class="cs-heading">Square Meters Paved</h3>
-                    <span class="cs-desc">Hardscaping projects that combine beauty and functionality.</span>
-                </div>
-            </div>
-            <!--Image-->
-            <picture class="cs-picture">
-                <source media="(max-width: 600px)"
-                    srcset="/images/Estate/EstateSidebySideImg.jpg">
-                <source media="(min-width: 601px)"
-                    srcset="/images/Estate/EstateSidebySideImg.jpg">
-                <img loading="lazy" decoding="async"
-                    src="/images/Estate/EstateSidebySideImg.jpg" alt="meeting"
-                    width="630" height="630" aria-hidden="true">
-            </picture>
-        </div>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32" height="32">
+            Know Your Number
+          </h3>
+          <p class="cs-item-text">
+            We add up expected expenses, list your income sources, and set a simple savings target so you know where you stand.
+          </p>
+        </li>
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon" width="32" height="32">
+            A Plan for Paychecks
+          </h3>
+          <p class="cs-item-text">
+            We build a monthly income plan—what to draw, from which account, and when—to help your money last.
+          </p>
+        </li>
+      </ul>
     </div>
+
+    <div class="cs-content">
+      <hr />
+      <br /><br />
+
+      <h1 class="cs-title">Save Wisely, Retire Confidently, <span class="cs-color">Enjoy Life</span></h1>
+
+      <br />
+      <h3>Simple decisions that make a big difference</h3>
+      <br />
+      <p>
+        Peterson Financial helps you map out retirement in plain language. We set savings goals, choose easy-to-manage investments, plan when to start Social Security, estimate healthcare and Medicare costs, and design a tax-smart withdrawal plan so your income feels steady and predictable.
+      </p>
+
+      <br />
+      <hr />
+      <br />
+
+      <div class="desktop-only">
+        <h3>How We Build Your Retirement Plan</h3>
+        <ol>
+          <li><strong>Picture your life:</strong> travel, hobbies, giving, and must-have expenses</li>
+          <li><strong>Check your income:</strong> Social Security, pensions, rental income, and part-time work</li>
+          <li><strong>Close the gap:</strong> set savings targets and a simple investment mix you can stick with</li>
+          <li><strong>Pick a start date:</strong> choose when to claim Social Security and how to bridge the years before</li>
+          <li><strong>Plan withdrawals:</strong> decide which accounts to use first (Roth, IRA, 401(k), taxable) to help lower taxes</li>
+          <li><strong>Account for healthcare:</strong> estimate Medicare premiums, supplements, and out-of-pocket costs</li>
+          <li><strong>Adjust as you go:</strong> review yearly and make small tweaks as life changes</li>
+        </ol>
+
+        <h4>What You’ll Get</h4>
+        <ul>
+          <li>Monthly income plan with a simple “which account and how much” guide</li>
+          <li>Social Security timing comparison to help you choose a start age</li>
+          <li>Savings target, automatic contribution setup, and rebalancing schedule</li>
+          <li>Tax-aware withdrawal order and basic Roth conversion guidance (when it helps)</li>
+          <li>Healthcare and Medicare cost estimate in your budget</li>
+        </ul>
+        <p><em>Notes: Investing involves risk, including loss. We coordinate with your tax and legal pros when needed.</em></p>
+      </div>
+    </div>
+  </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-563">
+  <div class="cs-container">
+    <picture class="cs-picture">
+      <source media="(max-width: 600px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
+      <source media="(min-width: 601px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
+      <img loading="lazy" decoding="async" src="/images/Estate/EstateSidebySideImg.jpg" alt="side-by-side retirement income scenarios comparison" width="630" height="528" aria-hidden="true">
+    </picture>
+    <div class="cs-content">
+      <span class="cs-topper">Featured Planning</span>
+      <br />
+      <h3 class="cs-h3">Your Personal Retirement Income Plan</h3>
+      <p class="cs-text">
+        We turn your savings into a monthly paycheck that fits your life—coordinating Social Security, pensions, and withdrawals so your plan feels stable.
+      </p>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+          Social Security timing and pension options explained in plain English
+        </li>
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+          Tax-smart withdrawal order to help your money last longer
+        </li>
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+          Clear check-ins and quick adjustments as life changes
+        </li>
+      </ul>
+      <a href="/contact" class="cs-button-solid">Start Retirement Planning</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-254">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">FAQ’s</span>
+      <h2 class="cs-title">Retirement Planning FAQs</h2>
+      <p class="cs-text">
+        Quick answers to common questions about timing, income, and healthcare.
+      </p>
+    </div>
+    <div class="cs-flex-group">
+      <ul class="cs-faq-group">
+        <li class="cs-faq-item active">
+          <button class="cs-button">How much do I need to retire?</button>
+          <p class="cs-item-p">
+            It depends on your lifestyle and income sources. We build a simple plan that shows monthly spending, savings needed, and when you can retire comfortably.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">When should I take Social Security?</button>
+          <p class="cs-item-p">
+            We compare claiming at 62, full retirement age, and 70 so you can see the tradeoffs and pick what fits your plan.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">Which accounts should I draw from first?</button>
+          <p class="cs-item-p">
+            We design a withdrawal order that can help lower taxes and make your savings last longer, adjusting as tax laws and your life change.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">What about healthcare costs?</button>
+          <p class="cs-item-p">
+            We estimate Medicare premiums, supplements, and out-of-pocket costs and add them to your budget so there are fewer surprises.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">Do you manage investments too?</button>
+          <p class="cs-item-p">
+            Yes. We can set up a simple, low-cost portfolio and keep it on track with rebalancing and regular reviews.
+          </p>
+        </li>
+      </ul>
+
+      <div class="cs-cta">
+        <h3 class="cs-h3">Ready to Retire with Confidence?</h3>
+        <p class="cs-cta-p">
+          Tell us your goals and we’ll build a clear path to get there.
+        </p>
+        <a href="/contact" class="cs-button-solid">Talk to Peterson Financial</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+    for (const item of faqItems) {
+      const onClick = () => {
+        item.classList.toggle('active')
+      }
+      item.addEventListener('click', onClick)
+    }
+  </script>
 </section>

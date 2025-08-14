@@ -1,191 +1,212 @@
 ---
-layout: 'base.html' 
-description: "Meta description for the page"
-metaTitle: 'Title that shows up on social OG tags'
-tagTitle: 'Title that shows up on google, and is concatenated with | {{ client.name }}'
-preloadImg: '/images/imageName.format'
+layout: 'base.html'
+description: 'Investment planning built around your goals: clear asset allocation, low-cost ETFs, tax-smart investing, rebalancing, and account selection (401(k), IRA, Roth, HSA, 529) by Peterson Financial.'
+metaTitle: 'Investment Planning | Peterson Financial'
+tagTitle: 'Investment Planning'
+title: 'Investment Planning'
+preloadImg: '/images/Estate/EstateBanner.jpg'
 preloadCSS: '/css/services.css'
 permalink: 'investment-planning/'
 eleventyNavigation:
-    parent: Services
-    key: Navigation Name
-    order: 1000
+  key: Investment Planning
+  parent: Services
+  order: 200
 ---
-<!-- ============================================ -->
-<!--                 Content Page                 -->
-<!-- ============================================ -->
-
-<!-- ============================================ 
-    This Stitch is used for content heavy interior pages
-    that have no design or layout.  Often times these are 
-    content silos where you talk extensively about a topic
-    to educate your visitors and rank on Google for the 
-    content.  These are great for pages that have a TON
-    of content.  Design isn't important here, it's all 
-    about making the content accessible and easy to read.
-================================================= -->
-
 <!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
-<div id="banner-1401">
-    <div class="cs-container">
-        <span class="cs-int-title">Investment Planning</span>
-        <div class="cs-breadcrumbs" style="font-weight: bold">
-            <a href="" class="cs-link">Home</a>
-            <a href="" class="cs-link cs-active">Investment Planning</a>
-        </div>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/images/Executive/ExecutiveBanner.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/images/Executive/ExecutiveBanner.jpg">
-        <img decoding="async" src="/images/Executive/ExecutiveBanner.jpg" alt="people laughing" width="1280"
-            height="568" aria-hidden="true">
-    </picture>
-</div>
-
-<section id="content-page-1401">
-    <div class="cs-container">
-        <div class="cs-image-group">
-            <div class="cs-flex">
-                <picture class="cs-background">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/images/Executive/ExecutiveInfoImg.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/images/Executive/ExecutiveInfoImg.jpg">
-                    <img loading="lazy" decoding="async" src="/images/Executive/ExecutiveInfoImg.jpg" alt="people"
-                        width="542" height="728">
-                </picture>
-                <div class="cs-box">
-                    <img class="cs-box-icon" loading="lazy" decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="people" width="60"
-                        height="60">
-                    <span class="cs-desc">
-                        We’ve Over 26 Years of Experience
-                    </span>
-                </div>
-            </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <h3 class="cs-h3">
-                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32"
-                            height="32">
-                        Quality Services
-                    </h3>
-                    <p class="cs-item-text">
-                        There are many variations of but the majority is simply free suffered.
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <h3 class="cs-h3">
-                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon"
-                            width="32" height="32">
-                        Quality Services
-                    </h3>
-                    <p class="cs-item-text">
-                        There are many variations of but the majority is simply free suffered.
-                    </p>
-                </li>
-            </ul>
-        </div>
-        <div class="cs-content">
-            <h1 class="cs-title">Smarter Strategies for
-                <span class="cs-color">Optimizing Investment Plans with Purpose
-                </span>
-            </h1>
-            <h2>Why Investment Plans Matters
-
-            </h2>
-            <p>
-                Investment compensation packages often go beyond base salary — including stock options, deferred
-                compensation, bonuses, and retirement plans. Without strategic planning, these complex benefits can
-                result in unnecessary tax burdens, missed opportunities, or misaligned long-term outcomes.
-            </p>
-            <p>
-                A thoughtful approach to investment compensation ensures that your rewards align with your personal
-                goals, protect your family’s future, and maximize what you’ve earned. From negotiating new offers to
-                planning your exit strategy, we provide guidance every step of the way.
-            </p>
-            <h3>The Benefits of Investment Compensation Planning:</h3>
-            <ol>
-                <li>Maximize after-tax income through smart structuring.
-
-                </li>
-                <li>Reduce risk with proper diversification and exit planning.
-                </li>
-                <li>Navigate equity, RSUs, and deferred comp with clarity.
-                </li>
-            </ol>
-            <h4>What a Strategic Compensation Plan Includes</h4>
-            <ul>
-                <li>Review and optimization of equity-based pay (RSUs, stock options, etc.)</li>
-                <li>Deferred compensation and retirement benefit analysis</li>
-                <li>Tax-efficient payout and liquidation strategies</li>
-                <li>Coordination with estate and wealth transfer goals</li>
-
-            </ul>
-        </div>
-    </div>
-    <div class="cs-bubbles" aria-hidden="true"></div>
+<section id="int-hero">
+  <h1 id="home-h">Investment Planning Made Simple</h1>
+  {% image './src/images/Estate/EstateBanner.jpg', 'investment planning and asset allocation by Peterson Financial', '', 'lazy', '(max-width: 850px) 850px, 1920px' %}
 </section>
 
 <!-- ============================================ -->
-<!--                Side By Side                  -->
+<!--                 Content Page                 -->
 <!-- ============================================ -->
 
-<section id="sbs-2291">
-    <div class="cs-container">
-        <!-- Left Content Section-->
-        <div class="cs-content">
-            <span class="cs-topper">Featured service</span>
-            <h2 class="cs-title">Creating a Clear and Secure Investment Plan</h2>
-            <p class="cs-text">
-                Investment planning is one of the most powerful tools for protecting your wealth, honoring your wishes,
-                and
-                supporting your family’s future. Our personalized Investment planning services help you avoid probate,
-                reduce tax burdens, and ensure your loved ones are cared for—no matter what lies ahead.
-
-            </p>
-            <div class="cs-features">
-                <h3 class="cs-h3">Designed for Clarity, Protection, and Peace of Mind</h3>
-                <ul class="cs-ul">
-                    <li class="cs-li">Personalized legal documents drafted by professionals
-
-                    </li>
-                    <li class="cs-li">Step-by-step guidance through every decision
-
-                    </li>
-                    <li class="cs-li">Support with beneficiary coordination and asset alignment
-
-                    </li>
-                </ul>
-            </div>
-            <a class="cs-button-solid" aria-label="learn more about our programs" href="" style="color:white">Read
-                More</a>
+<section id="content-page-1402">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <div class="cs-flex">
+        <picture class="cs-background">
+          <source media="(max-width: 600px)" srcset="/images/Estate/EstateInfoImg.png">
+          <source media="(min-width: 601px)" srcset="/images/Estate/EstateInfoImg.png">
+          <img loading="lazy" decoding="async" src="/images/Estate/EstateInfoImg.png" alt="investment policy and asset allocation overview" width="542" height="728">
+        </picture>
+        <div class="cs-box">
+          <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="planning icon" width="60" height="60">
+          <span class="cs-desc">
+            Goal-Focused • Low-Cost • Tax-Smart
+          </span>
         </div>
-        <!-- Right Image Section -->
-        <div class="cs-image-group">
-            <!--Floating Box-->
-            <div class="cs-box">
-                <span class="cs-number">12K+</span>
-                <div class="cs-flex">
-                    <h3 class="cs-heading">Square Meters Paved</h3>
-                    <span class="cs-desc">Hardscaping projects that combine beauty and functionality.</span>
-                </div>
-            </div>
-            <!--Image-->
-            <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="/images/Executive/ExecutiveSidebySideImg.jpg">
-                <source media="(min-width: 601px)" srcset="/images/Executive/ExecutiveSidebySideImg.jpg">
-                <img loading="lazy" decoding="async" src="/images/Executive/ExecutiveSidebySideImg.jpg" alt="meeting"
-                    width="630" height="630" aria-hidden="true">
-            </picture>
-        </div>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32" height="32">
+            Personalized Portfolios
+          </h3>
+          <p class="cs-item-text">
+            Your mix of stocks, bonds, and cash is tailored to your goals, timeline, and comfort with risk.
+          </p>
+        </li>
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon" width="32" height="32">
+            Easy to Maintain
+          </h3>
+          <p class="cs-item-text">
+            We automate contributions and rebalance on a schedule so your plan stays on track without extra work.
+          </p>
+        </li>
+      </ul>
     </div>
+
+    <div class="cs-content">
+      <hr />
+      <br /><br />
+
+      <h1 class="cs-title">Clear Steps to <span class="cs-color">Grow Your Money</span></h1>
+
+      <br />
+      <h3>Invest with a plan, not a hunch</h3>
+      <br />
+      <p>
+        Peterson Financial builds an investment plan you can stick with. We keep costs low, spread your risk, and place investments in the right accounts for taxes. You’ll know what you own, why you own it, and what to do next.
+      </p>
+
+      <br />
+      <hr />
+      <br />
+
+      <div class="desktop-only">
+        <h3>How We Build Your Portfolio</h3>
+        <ol>
+          <li>Understand your goals and timeline (near-term, retirement, college, big purchases)</li>
+          <li>Set a target mix of stocks, bonds, and cash that fits your comfort with ups and downs</li>
+          <li>Choose low-cost index funds/ETFs to keep more of your returns</li>
+          <li>Place assets in the right accounts (Roth/IRA/401(k)/HSA/taxable) to reduce taxes</li>
+          <li>Automate contributions and set a simple rebalancing schedule</li>
+          <li>Review regularly and adjust as life changes</li>
+        </ol>
+
+        <h4>What’s Included</h4>
+        <ul>
+          <li>Target allocation and fund list you can follow</li>
+          <li>Account setup and transfer checklist</li>
+          <li>Monthly saving targets and auto-invest instructions</li>
+          <li>Guidance on withdrawals and “which account first” when you need money</li>
+          <li>Tax-aware moves like asset location and, when appropriate, tax-loss harvesting</li>
+        </ul>
+        <p><em>Notes: Investing involves risk, including loss. Diversification can’t guarantee profits or prevent losses. We coordinate with your tax and legal pros when needed.</em></p>
+      </div>
+    </div>
+  </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-563">
+  <div class="cs-container">
+    <picture class="cs-picture">
+      <source media="(max-width: 600px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
+      <source media="(min-width: 601px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
+      <img loading="lazy" decoding="async" src="/images/Estate/EstateSidebySideImg.jpg" alt="side-by-side investment scenarios and allocation comparison" width="630" height="528" aria-hidden="true">
+    </picture>
+    <div class="cs-content">
+      <span class="cs-topper">Featured Planning</span>
+      <br />
+      <h3 class="cs-h3">Simple, Diversified Portfolios</h3>
+      <p class="cs-text">
+        We use a handful of broad, low-cost funds to cover the market—then rebalance and refine as your life and goals change.
+      </p>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+          Clear target mix with drift-based rebalancing
+        </li>
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+          Tax-aware account placement and withdrawal order
+        </li>
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+          Ongoing check-ins and easy adjustments
+        </li>
+      </ul>
+      <a href="/contact" class="cs-button-solid">Start Investment Planning</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-254">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">FAQ’s</span>
+      <h2 class="cs-title">Investment Planning FAQs</h2>
+      <p class="cs-text">
+        Quick answers to common questions about how we invest and what to expect.
+      </p>
+    </div>
+    <div class="cs-flex-group">
+      <ul class="cs-faq-group">
+        <li class="cs-faq-item active">
+          <button class="cs-button">Do you pick individual stocks?</button>
+          <p class="cs-item-p">
+            Usually no. We prefer broad, low-cost index funds and ETFs to keep things simple and diversified.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">How often do you rebalance?</button>
+          <p class="cs-item-p">
+            On a set schedule or when your mix drifts beyond a chosen range. This keeps risk in line with your plan.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">Can you help with my 401(k) choices?</button>
+          <p class="cs-item-p">
+            Yes. We’ll pick a simple lineup from your plan’s options and show you how much to save each paycheck.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">Which accounts do you work with?</button>
+          <p class="cs-item-p">
+            401(k), 403(b), IRA, Roth IRA, HSA, taxable brokerage, custodial accounts, and 529 college plans.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">How do you charge for this?</button>
+          <p class="cs-item-p">
+            We explain our fee up front in plain language—no hidden costs.
+          </p>
+        </li>
+      </ul>
+
+      <div class="cs-cta">
+        <h3 class="cs-h3">Ready to Invest with Confidence?</h3>
+        <p class="cs-cta-p">
+          Tell us your goals and we’ll build a simple plan to get you there.
+        </p>
+        <a href="/contact" class="cs-button-solid">Talk to Peterson Financial</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+    for (const item of faqItems) {
+      const onClick = () => {
+        item.classList.toggle('active')
+      }
+      item.addEventListener('click', onClick)
+    }
+  </script>
 </section>

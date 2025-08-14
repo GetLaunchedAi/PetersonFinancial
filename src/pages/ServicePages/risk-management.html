@@ -1,184 +1,214 @@
 ---
 layout: 'base.html'
-description: "Meta description for the page"
-metaTitle: 'Title that shows up on social OG tags'
-tagTitle: 'Title that shows up on google, and is concatenated with | {{ client.name }}'
-preloadImg: '/images/imageName.format'
+description: 'Risk management for families and professionals: insurance review (life, disability, long-term care, umbrella), portfolio risk and diversification, cash reserves, and contingency planning by Peterson Financial.'
+metaTitle: 'Risk Management | Peterson Financial'
+tagTitle: 'Risk Management'
+title: 'Risk Management'
+preloadImg: '/images/EstateBanner.jpg'
 preloadCSS: '/css/services.css'
 permalink: 'risk-management/'
 eleventyNavigation:
-parent: Services
-key: Navigation Name
-order: 1000
+  key: Risk Management
+  parent: Services
+  order: 200
 ---
-<!-- ============================================ -->
-<!--                 Content Page                 -->
-<!-- ============================================ -->
-
-<!-- ============================================ 
-    This Stitch is used for content heavy interior pages
-    that have no design or layout.  Often times these are 
-    content silos where you talk extensively about a topic
-    to educate your visitors and rank on Google for the 
-    content.  These are great for pages that have a TON
-    of content.  Design isn't important here, it's all 
-    about making the content accessible and easy to read.
-================================================= -->
-
 <!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
-<div id="banner-1401">
-    <div class="cs-container">
-        <span class="cs-int-title">Risk Management</span>
-        <div class="cs-breadcrumbs" style="font-weight: bold">
-            <a href="" class="cs-link">Home</a>
-            <a href="" class="cs-link cs-active">Risk Management</a>
-        </div>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/images/Estate/EstateBanner.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/images/Estate/EstateBanner.jpg">
-        <img decoding="async" src="/images/Estate/EstateBanner.jpg" alt="people laughing" width="1280" height="568"
-            aria-hidden="true">
-    </picture>
-</div>
-
-<section id="content-page-1401">
-    <div class="cs-container">
-        <div class="cs-image-group">
-            <div class="cs-flex">
-                <picture class="cs-background">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/images/Estate/EstateInfoImg.png">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/images/Estate/EstateInfoImg.png">
-                    <img loading="lazy" decoding="async" src="/images/Estate/EstateInfoImg.png" alt="people" width="542"
-                        height="728">
-                </picture>
-                <div class="cs-box">
-                    <img class="cs-box-icon" loading="lazy" decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="people" width="60"
-                        height="60">
-                    <span class="cs-desc">
-                        We’ve Over 26 Years of Experience
-                    </span>
-                </div>
-            </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <h3 class="cs-h3">
-                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32"
-                            height="32">
-                        Quality Services
-                    </h3>
-                    <p class="cs-item-text">
-                        There are many variations of but the majority is simply free suffered.
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <h3 class="cs-h3">
-                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon"
-                            width="32" height="32">
-                        Quality Services
-                    </h3>
-                    <p class="cs-item-text">
-                        There are many variations of but the majority is simply free suffered.
-                    </p>
-                </li>
-            </ul>
-        </div>
-        <div class="cs-content">
-            <h1 class="cs-title">Protect What Matters Most: <span class="cs-color">Your Family and Legacy</span></h1>
-            <h2>Why Risk Management Matters</h2>
-            <p>
-                Risk is an unavoidable part of life—but it doesn’t have to disrupt your financial future. At Peterson
-                Financial, our risk management approach is designed to protect your income, assets, and legacy from the
-                unexpected. Whether it's market volatility, health challenges, legal disputes, or business setbacks, we
-                help you build a plan that minimizes vulnerability and maximizes peace of mind.
-            </p>
-            <p>
-                From individuals and families to business owners and executives, we work closely with you to understand
-                your unique situation and develop strategies that align with your long-term goals.
-            </p>
-
-            <p>
-                It can help minimize taxes, avoid lengthy probate processes, and reduce the burden on your family during
-                difficult times. A well-crafted estate plan gives you control over how your assets are managed and
-                distributed. It also allows you to designate trusted individuals to make financial or medical decisions
-                on your behalf if you're ever unable to do so.
-            </p>
-            <h3>The Benefits of Risk Management:</h3>
-            <ol>
-                <li>Reduces exposure to financial loss from unexpected life events.</li>
-                <li>Ensures proper insurance coverage for income, health, property, and liability.</li>
-                <li>Protects your family and business through estate and succession planning.</li>
-                <li>Aligns investment strategy with your risk tolerance and timeline.</li>
-                <li>Provides confidence during periods of market uncertainty.</li>
-            </ol>
-            <h4>What a Risk Management Strategy May Include</h4>
-            <ul>
-                <li>Asset protection planning (e.g., trusts, insurance coverage, legal structures)</li>
-                <li>Estate planning tools like wills, living trusts, and power of attorney</li>
-                <li>Review of life, disability, and long-term care insurance policies</li>
-                <li>Portfolio diversification and risk-aligned investment strategy</li>
-                <li>Business continuity and succession planning for entrepreneurs</li>
-            </ul>
-
-        </div>
-    </div>
-    <div class="cs-bubbles" aria-hidden="true"></div>
+<section id="int-hero">
+  <h1 id="home-h">Risk Management for Your Financial Life</h1>
+  {% image './src/images/Estate/EstateBanner.jpg', 'financial risk management by Peterson Financial', '', 'lazy', '(max-width: 850px) 850px, 1920px' %}
 </section>
 
 <!-- ============================================ -->
-<!--                Side By Side                  -->
+<!--                 Content Page                 -->
 <!-- ============================================ -->
 
-<section id="sbs-2291">
-    <div class="cs-container">
-        <!-- Left Content Section-->
-        <div class="cs-content">
-            <span class="cs-topper">Featured service</span>
-            <h2 class="cs-title">Integrated Strategies to Safeguard Your Future</h2>
-            <p class="cs-text">
-                At Peterson Financial, risk management isn't an afterthought—it's the foundation of a strong financial
-                plan. Whether you're navigating volatile markets, managing a business, or planning for the unexpected,
-                we provide guidance and tools to protect what matters most.
-            </p>
-            <div class="cs-features">
-                <h3 class="cs-h3">Personalized Risk Mitigation Plans Include:</h3>
-                <ul class="cs-ul">
-                    <li class="cs-li">Thorough evaluation of personal, family, and business risk</li>
-                    <li class="cs-li">Tailored insurance recommendations based on needs and life stage</li>
-                    <li class="cs-li">Portfolio reviews to align investments with risk tolerance</li>
-                </ul>
-            </div>
-            <a class="cs-button-solid" aria-label="learn more about our programs" href="/contact"
-                style="color:white">Schedule a Risk Review</a>
-    </div>
-    <!-- Right Image Section -->
+<section id="content-page-1402">
+  <div class="cs-container">
     <div class="cs-image-group">
-        <!--Floating Box-->
-        <div class="cs-box">
-            <span class="cs-number">12K+</span>
-            <div class="cs-flex">
-                <h3 class="cs-heading">Square Meters Paved</h3>
-                <span class="cs-desc">Hardscaping projects that combine beauty and functionality.</span>
-            </div>
-        </div>
-        <!--Image-->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
-            <source media="(min-width: 601px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
-            <img loading="lazy" decoding="async" src="/images/Estate/EstateSidebySideImg.jpg" alt="meeting" width="630"
-                height="630" aria-hidden="true">
+      <div class="cs-flex">
+        <picture class="cs-background">
+          <source media="(max-width: 600px)" srcset="/images/Estate/EstateInfoImg.png">
+          <source media="(min-width: 601px)" srcset="/images/Estate/EstateInfoImg.png">
+          <img loading="lazy" decoding="async" src="/images/Estate/EstateInfoImg.png" alt="insurance and portfolio risk checklist" width="542" height="728">
         </picture>
+        <div class="cs-box">
+          <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="shield icon" width="60" height="60">
+          <span class="cs-desc">
+            Protect What Matters • Plan for What-Ifs
+          </span>
+        </div>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32" height="32">
+            Coverage That Fits
+          </h3>
+          <p class="cs-item-text">
+            We right-size life, disability, long-term care, and umbrella insurance so you’re covered without overpaying.
+          </p>
+        </li>
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon" width="32" height="32">
+            Smoother Ride in Markets
+          </h3>
+          <p class="cs-item-text">
+            We test your portfolio for ups and downs, reduce concentration risk, and set clear rebalancing rules.
+          </p>
+        </li>
+      </ul>
     </div>
+
+    <div class="cs-content">
+      <hr />
+      <br /><br />
+
+      <h1 class="cs-title">Identify Risks, Reduce Exposure, <span class="cs-color">Stay on Track</span></h1>
+
+      <br />
+      <h3>Simple steps to protect your plan from surprises</h3>
+      <br />
+      <p>
+        Peterson Financial helps you build a safety net around your goals. We review insurance, cash reserves, and investment risk, then create clear actions—so one event doesn’t derail your future. You’ll know what to keep, what to change, and why.
+      </p>
+
+      <br />
+      <hr />
+      <br />
+
+      <div class="desktop-only">
+        <h3>What We Cover</h3>
+        <ol>
+          <li><strong>Income protection:</strong> disability coverage levels, elimination periods, and riders</li>
+          <li><strong>Family protection:</strong> term life needs analysis and beneficiary alignment</li>
+          <li><strong>Long-term care:</strong> cost estimates, policy options, and alternatives</li>
+          <li><strong>Liability & property:</strong> umbrella limits, home/auto coordination, deductibles</li>
+          <li><strong>Cash reserves:</strong> emergency fund targets and where to keep the cash</li>
+          <li><strong>Portfolio risk:</strong> allocation, drawdown stress tests, concentration checks, rebalancing</li>
+          <li><strong>Retirement risks:</strong> sequence of returns, inflation, longevity, withdrawal guardrails</li>
+          <li><strong>Business owners:</strong> key-person, buy-sell funding, and entity liability basics</li>
+          <li><strong>Fraud & cyber:</strong> practical steps to secure accounts and reduce identity risk</li>
+        </ol>
+
+        <h4>Your Deliverables</h4>
+        <ul>
+          <li>Coverage gap report with suggested limits, terms, and next steps</li>
+          <li>Emergency fund target and high-yield savings setup guide</li>
+          <li>Portfolio risk snapshot with stress-test results and rebalancing policy</li>
+          <li>Action checklist to implement changes and review annually</li>
+        </ul>
+        <p><em>Disclosure: We do not provide legal or tax advice. We can coordinate with licensed agents, your attorney, and CPA to implement recommended changes.</em></p>
+      </div>
     </div>
+  </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-563">
+  <div class="cs-container">
+    <picture class="cs-picture">
+      <source media="(max-width: 600px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
+      <source media="(min-width: 601px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
+      <img loading="lazy" decoding="async" src="/images/Estate/EstateSidebySideImg.jpg" alt="side-by-side coverage review and portfolio stress test" width="630" height="528" aria-hidden="true">
+    </picture>
+    <div class="cs-content">
+      <span class="cs-topper">Featured Service</span>
+      <br />
+      <h3 class="cs-h3">Insurance & Portfolio Risk Review</h3>
+      <p class="cs-text">
+        Get a clear picture of where you’re exposed—and what to do about it. We compare policy options, set umbrella and deductibles, and stress-test your investments to handle market swings.
+      </p>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+          Coverage gap analysis: life, disability, LTC, umbrella
+        </li>
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+          Portfolio stress tests and rebalancing guidelines
+        </li>
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+          Emergency fund and withdrawal guardrails
+        </li>
+      </ul>
+      <a href="/contact" class="cs-button-solid">Request a Risk Review</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-254">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">FAQ’s</span>
+      <h2 class="cs-title">Risk Management FAQs</h2>
+      <p class="cs-text">
+        Quick answers on coverage, cash reserves, and how we manage investment risk.
+      </p>
+    </div>
+    <div class="cs-flex-group">
+      <ul class="cs-faq-group">
+        <li class="cs-faq-item active">
+          <button class="cs-button">What’s included in a risk review?</button>
+          <p class="cs-item-p">
+            A review of insurance, cash reserves, and portfolio risk with clear recommendations and an action checklist.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">Do you sell insurance?</button>
+          <p class="cs-item-p">
+            We can analyze your coverage and help you compare options. If changes make sense, we’ll coordinate with your current carrier or a licensed agent you choose.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">How big should my emergency fund be?</button>
+          <p class="cs-item-p">
+            Typically 3–6 months of living expenses; 6–12 months for variable income or business owners. We’ll set a number that fits your situation.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">How do you measure portfolio risk?</button>
+          <p class="cs-item-p">
+            We look at allocation, volatility, and potential drawdowns, then run stress tests and set rebalancing rules to keep risk in line with your plan.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">Will improving coverage raise my costs?</button>
+          <p class="cs-item-p">
+            Sometimes, but not always. We aim for the right protection at good value—adjusting deductibles, terms, and carriers where it helps.
+          </p>
+        </li>
+      </ul>
+
+      <div class="cs-cta">
+        <h3 class="cs-h3">Ready to Protect Your Plan?</h3>
+        <p class="cs-cta-p">
+          Tell us about your situation and we’ll build a clear, practical risk plan.
+        </p>
+        <a href="/contact" class="cs-button-solid">Talk to Peterson Financial</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+    for (const item of faqItems) {
+      const onClick = () => {
+        item.classList.toggle('active')
+      }
+      item.addEventListener('click', onClick)
+    }
+  </script>
 </section>

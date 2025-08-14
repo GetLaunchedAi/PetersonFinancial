@@ -435,6 +435,9 @@
     color: #fff;
     transition: color .3s;
   }
+  #navigation #navbar-menu .dropdown-menu a {
+    color:black
+  }
   #navigation #navbar-menu ul li a:before {
     content: '';
     position: absolute;
@@ -905,10 +908,10 @@ nav ul li.dropdown.open .dropdown-menu {
     background: #061623;
   }
   body.dark-mode nav .dropdown-menu {
-    background-color: var(--medium);
+    background-color: var(--dark);
     
   }
-  body.dark-mode nav .dropdown-menu li a {
+  body.dark-mode nav .dropdown-menu ul li a {
     color:white;
     
   }

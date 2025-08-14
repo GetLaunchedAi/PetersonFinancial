@@ -1,193 +1,211 @@
 ---
 layout: 'base.html'
-description: "Meta description for the page"
-metaTitle: 'Title that shows up on social OG tags'
-tagTitle: 'Title that shows up on google, and is concatenated with | {{ client.name }}'
-preloadImg: '/images/Estate/EstateBanner.jpg'
+description: 'Estate planning services for individuals and families: wills, revocable living trusts, powers of attorney, healthcare directives, beneficiary reviews, probate avoidance, and tax-efficient strategies by Peterson Financial.'
+metaTitle: 'Estate Planning | Peterson Financial'
+tagTitle: 'Estate Planning'
+title: 'Estate Planning'
+preloadImg: '/images/EstateBanner.jpg'
 preloadCSS: '/css/services.css'
 permalink: 'estate-planning/'
 eleventyNavigation:
-parent: Services
-key: Navigation Name
-order: 1000
+  key: Estate Planning
+  parent: Services
+  order: 200
 ---
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Estate Planning</h1>
+  {% image './src/images/Estate/EstateBanner.jpg', 'estate planning and legacy strategies by Peterson Financial', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+</section>
 
 <!-- ============================================ -->
 <!--                 Content Page                 -->
 <!-- ============================================ -->
 
-<!-- ============================================ 
-    This Stitch is used for content heavy interior pages
-    that have no design or layout.  Often times these are 
-    content silos where you talk extensively about a topic
-    to educate your visitors and rank on Google for the 
-    content.  These are great for pages that have a TON
-    of content.  Design isn't important here, it's all 
-    about making the content accessible and easy to read.
-================================================= -->
-
-<!-- ============================================ -->
-<!--                   Banner                     -->
-<!-- ============================================ -->
-
-<div id="banner-1401">
-    <div class="cs-container">
-        <span class="cs-int-title">Estate Planning</span>
-        <div class="cs-breadcrumbs" style="font-weight: bold">
-            <a href="" class="cs-link">Home</a>
-            <a href="" class="cs-link cs-active">Estate Planning</a>
+<section id="content-page-1402">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <div class="cs-flex">
+        <picture class="cs-background">
+          <source media="(max-width: 600px)" srcset="/images/Estate/EstateInfoImg.png">
+          <source media="(min-width: 601px)" srcset="/images/Estate/EstateInfoImg.png">
+          <img loading="lazy" decoding="async" src="/images/Estate/EstateInfoImg.png" alt="will and trust documents with beneficiary checklist" width="542" height="728">
+        </picture>
+        <div class="cs-box">
+          <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="planning icon" width="60" height="60">
+          <span class="cs-desc">
+            Trusted Estate Planning Guidance
+          </span>
         </div>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32" height="32">
+            Comprehensive, Coordinated Plans
+          </h3>
+          <p class="cs-item-text">
+            We align wills, trusts, beneficiary designations, titling, and tax strategy so your intentions are clear and assets transfer efficiently.
+          </p>
+        </li>
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon" width="32" height="32">
+            Attorney & CPA Collaboration
+          </h3>
+          <p class="cs-item-text">
+            We coordinate with your attorney and tax professional to implement documents and funding, minimizing delays and surprises.
+          </p>
+        </li>
+      </ul>
     </div>
-    <!--Background Image-->
-    <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/images/Estate/EstateBanner.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/images/Estate/EstateBanner.jpg">
-        <img decoding="async" src="/images/Estate/EstateBanner.jpg" alt="people laughing" width="1280" height="568"
-            aria-hidden="true">
-    </picture>
-</div>
 
-<section id="content-page-1401">
-    <div class="cs-container">
-        <div class="cs-image-group">
-            <div class="cs-flex">
-                <picture class="cs-background">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/images/Estate/EstateInfoImg.png">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/images/Estate/EstateInfoImg.png">
-                    <img loading="lazy" decoding="async" src="/images/Estate/EstateInfoImg.png" alt="people" width="542"
-                        height="728">
-                </picture>
-                <div class="cs-box">
-                    <img class="cs-box-icon" loading="lazy" decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="people" width="60"
-                        height="60">
-                    <span class="cs-desc">
-                        We’ve Over 26 Years of Experience
-                    </span>
-                </div>
-            </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <h3 class="cs-h3">
-                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32"
-                            height="32">
-                        Quality Services
-                    </h3>
-                    <p class="cs-item-text">
-                        There are many variations of but the majority is simply free suffered.
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <h3 class="cs-h3">
-                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon"
-                            width="32" height="32">
-                        Quality Services
-                    </h3>
-                    <p class="cs-item-text">
-                        There are many variations of but the majority is simply free suffered.
-                    </p>
-                </li>
-            </ul>
-        </div>
-        <div class="cs-content">
-            <h1 class="cs-title">Protect What Matters Most: <span class="cs-color">Your Family and Legacy</span></h1>
-            <h2>Why Estate Planning Matters
+    <div class="cs-content">
+      <hr />
+      <br /><br />
 
-            </h2>
-            <p>
-                Estate planning isn't just for the wealthy—it's for everyone who wants peace of mind. Whether you're
-                securing your family's future, preserving a lifetime of hard work, or preparing for the unexpected, a
-                clear estate plan ensures your wishes are honored and your loved ones are protected.
-            </p>
-            <p>
-                It can help minimize taxes, avoid lengthy probate processes, and reduce the burden on your family during
-                difficult times. A well-crafted estate plan gives you control over how your assets are managed and
-                distributed. It also allows you to designate trusted individuals to make financial or medical decisions
-                on your behalf if you're ever unable to do so.
-            </p>
-            <h3>The Benefits of Estate Planning:</h3>
-            <ol>
-                <li>Prevents family disputes by clearly outlining asset distribution.
+      <h1 class="cs-title">Wills, Trusts & <span class="cs-color">Legacy Planning</span></h1>
 
-                </li>
-                <li>Save on taxes and legal fees.
+      <br />
+      <h3>Protect your family, minimize taxes, and make your wishes unmistakable</h3>
+      <br />
+      <p>
+        Peterson Financial helps you design an estate plan that fits your life—covering wills and revocable living trusts, durable powers of attorney, healthcare directives, guardianship, TOD/POD designations, trust funding, and strategies to simplify—or avoid—probate. We make the process clear, organized, and action-oriented.
+      </p>
 
-                </li>
-                <li>Ensures guardianship for minors or dependents.
+      <br />
+      <hr />
+      <br />
 
-                </li>
-            </ol>
-            <h4>What a Comprehensive Estate Plan Includes</h4>
-            <ul>
-                <li>A legally binding will to guide asset distribution</li>
-                <li>A revocable living trust to avoid probate and maintain privacy</li>
-                <li>Beneficiary designations aligned with your goals</li>
-                <li>A letter of intent to clarify personal wishes or instructions</li>
+      <div class="desktop-only">
+        <h3>What We Cover</h3>
+        <ol>
+          <li>Discovery: family goals, beneficiaries, special considerations, charitable intent</li>
+          <li>Asset map: account titling, beneficiary designations, TOD/POD, real estate</li>
+          <li>Document strategy: will vs. revocable trust, POA, healthcare directives</li>
+          <li>Trust funding plan: deeds, account retitling, beneficiary updates</li>
+          <li>Tax considerations: step-up in basis, portability, gifting & charitable planning</li>
+          <li>Implementation & review: coordinate with attorney/CPA and set annual check-ins</li>
+        </ol>
 
-            </ul>
-        </div>
+        <h4>Your Deliverables</h4>
+        <ul>
+          <li>Written estate plan outline with beneficiary & titling checklist</li>
+          <li>Trust funding roadmap and transfer/retitling to-do list</li>
+          <li>Letter of intent for guardians/executors/trustees</li>
+          <li>Review cadence for life events (marriage, children, inheritances, new assets)</li>
+        </ul>
+        <p><em>Note: We do not provide legal or tax advice. We collaborate with your attorney and CPA to finalize documents and filings.</em></p>
+      </div>
     </div>
-    <div class="cs-bubbles" aria-hidden="true"></div>
+  </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
 </section>
 
 <!-- ============================================ -->
-<!--                Side By Side                  -->
+<!--                  Services                    -->
 <!-- ============================================ -->
 
-<section id="sbs-2291">
-    <div class="cs-container">
-        <!-- Left Content Section-->
-        <div class="cs-content">
-            <span class="cs-topper">Featured service</span>
-            <h2 class="cs-title">Creating a Clear and Secure Estate Plan</h2>
-            <p class="cs-text">
-                Estate planning is one of the most powerful tools for protecting your wealth, honoring your wishes, and
-                supporting your family’s future. Our personalized estate planning services help you avoid probate,
-                reduce tax burdens, and ensure your loved ones are cared for—no matter what lies ahead.
-
-            </p>
-            <div class="cs-features">
-                <h3 class="cs-h3">Designed for Clarity, Protection, and Peace of Mind</h3>
-                <ul class="cs-ul">
-                    <li class="cs-li">Personalized legal documents drafted by professionals
-
-                    </li>
-                    <li class="cs-li">Step-by-step guidance through every decision
-
-                    </li>
-                    <li class="cs-li">Support with beneficiary coordination and asset alignment
-
-                    </li>
-                </ul>
-            </div>
-            <a class="cs-button-solid" aria-label="learn more about our programs" href="" style="color:white">Read More</a>
-        </div>
-        <!-- Right Image Section -->
-        <div class="cs-image-group">
-            <!--Floating Box-->
-            <div class="cs-box">
-                <span class="cs-number">12K+</span>
-                <div class="cs-flex">
-                    <h3 class="cs-heading">Square Meters Paved</h3>
-                    <span class="cs-desc">Hardscaping projects that combine beauty and functionality.</span>
-                </div>
-            </div>
-            <!--Image-->
-            <picture class="cs-picture">
-                <source media="(max-width: 600px)"
-                    srcset="/images/Estate/EstateSidebySideImg.jpg">
-                <source media="(min-width: 601px)"
-                    srcset="/images/Estate/EstateSidebySideImg.jpg">
-                <img loading="lazy" decoding="async"
-                    src="/images/Estate/EstateSidebySideImg.jpg" alt="meeting"
-                    width="630" height="630" aria-hidden="true">
-            </picture>
-        </div>
+<section id="services-563">
+  <div class="cs-container">
+    <picture class="cs-picture">
+      <source media="(max-width: 600px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
+      <source media="(min-width: 601px)" srcset="/images/Estate/EstateSidebySideImg.jpg">
+      <img loading="lazy" decoding="async" src="/images/Estate/EstateSidebySideImg.jpg" alt="side-by-side estate planning options comparison" width="630" height="528" aria-hidden="true">
+    </picture>
+    <div class="cs-content">
+      <span class="cs-topper">Featured Service</span>
+      <br />
+      <h3 class="cs-h3">Revocable Living Trusts & <span class="cs-color">Will-Based Plans</span></h3>
+      <p class="cs-text">
+        Decide whether a will-only plan or a revocable trust best fits your estate. We map titling and beneficiaries, outline a trust funding plan, and coordinate with your attorney to execute documents and minimize probate complexity.
+      </p>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+          Wills, pour-over wills, POA, healthcare directives, living wills
+        </li>
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+          Revocable trust coordination & funding checklist
+        </li>
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+          Beneficiary alignment for IRAs, 401(k)s, life insurance & brokerage
+        </li>
+      </ul>
+      <a href="/contact" class="cs-button-solid">Request an Estate Planning Consult</a>
     </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-254">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">FAQ’s</span>
+      <h2 class="cs-title">Estate Planning FAQs</h2>
+      <p class="cs-text">
+        Common questions about wills, trusts, beneficiaries, probate, and how Peterson Financial works with your legal and tax team.
+      </p>
+    </div>
+    <div class="cs-flex-group">
+      <ul class="cs-faq-group">
+        <!-- Active class added as default -->
+        <li class="cs-faq-item active">
+          <button class="cs-button">Do I need a will or a revocable living trust?</button>
+          <p class="cs-item-p">
+            It depends on your goals, assets, and state law. We outline pros/cons and coordinate with your attorney to determine the right structure and documents.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">What documents are typically included?</button>
+          <p class="cs-item-p">
+            Will or revocable trust, durable financial power of attorney, healthcare POA, living will/advance directive, and a trust funding plan where applicable.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">How often should I update my plan?</button>
+          <p class="cs-item-p">
+            Review after major life events and at least every 2–3 years to keep beneficiaries, titling, and directives current.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">Do beneficiary designations override my will?</button>
+          <p class="cs-item-p">
+            Yes—beneficiary designations on accounts and policies generally control who receives those assets. We help you align designations with your overall plan.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">Can you work with my current attorney and CPA?</button>
+          <p class="cs-item-p">
+            Absolutely. We collaborate with your professionals to implement documents, funding, and tax planning effectively.
+          </p>
+        </li>
+      </ul>
+      <div class="cs-cta">
+        <h3 class="cs-h3">Ready to Build Your Plan?</h3>
+        <p class="cs-cta-p">
+          Tell us about your goals and we’ll prepare a clear path to protect your family and legacy.
+        </p>
+        <a href="/contact" class="cs-button-solid">Schedule with Peterson Financial</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+    for (const item of faqItems) {
+      const onClick = () => {
+        item.classList.toggle('active')
+      }
+      item.addEventListener('click', onClick)
+    }
+  </script>
 </section>

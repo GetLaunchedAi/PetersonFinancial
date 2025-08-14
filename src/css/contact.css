@@ -319,3 +319,26 @@
     opacity: .5;
   }
 }
+
+@media only screen and (min-width:0em) {
+.img-cover {
+  object-fit:fill;
+  border-radius: 5%;
+  display: block;
+  /* overflow: visible; */
+  height: 20rem;
+  width:100%;
+}
+}
+@media only screen and (min-width:64em) {
+.img-cover {
+  padding-top: 2rem;
+  object-fit:fill;
+  display: block;
+  /* overflow: visible; */
+  height: 36.125rem;
+  border-radius: 10%;
+  /* border: 4px solid blue; */
+}
+
+}
