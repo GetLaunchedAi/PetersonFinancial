@@ -135,6 +135,7 @@
   #sbs .button-solid {
     margin-top: 2rem;
   }
+  
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64em) {
@@ -681,6 +682,18 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
+  .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+  color: #fff; /* inherits via currentColor */
+}
+
+.contact-email .icon {
+  color: #ccc;
+}
+
   #cta {
     position: relative;
     padding: 3.125rem 0;
@@ -725,7 +738,7 @@
     margin-bottom: 2.25rem;
     text-align: center;
   }
-  #cta p {
+  #cta a {
     color: #fff;
     text-align: center;
     opacity: 1;
@@ -733,6 +746,8 @@
     margin-bottom: 2.25rem;
     width: 96%;
     max-width: 37.375rem;
+    font-size: min(4.5vw, 1.5rem);
+
   }
 }
 /* Small Desktop */
