@@ -262,7 +262,7 @@ eleventyNavigation:
 <section id="cta">
   <div class="container">
     <h2 class="title">Get In Touch <br/>
-    <a>
+    <a style="text-decoration: none;" href="tel:{{client.phone}}">
         <svg class="icon icon-phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
   <path d="M22 16.92v3a2 2 0 0 1-2.18 2
            19.86 19.86 0 0 1-8.63-3.07
@@ -287,7 +287,7 @@ eleventyNavigation:
      {{client.phoneFormatted}}
 </a>
 <br/> 
-        <a>
+        <a class="cs-link" style="text-decoration: none;" href="mailto:{{client.email}}">
             <svg class="icon icon-email" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
   <path d="M4 4h16a2 2 0 0 1 2 2v12
            a2 2 0 0 1-2 2H4
@@ -309,7 +309,7 @@ eleventyNavigation:
     {{client.email}}
 </a>
 <br/> 
-    <a><svg class="icon icon-location" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+    <a style="cursor:default"><svg class="icon icon-location" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
   <path d="M12 21s-6-5.33-6-10
            a6 6 0 0 1 12 0
            c0 4.67-6 10-6 10z"

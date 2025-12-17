@@ -48,14 +48,14 @@
                     <li>
                         <h2>Contact</h2>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="/contact">First Address Line<br>Denver CO 80206</a>
+                    </li> -->
+                    <li>
+                        <a href="tel:{{client.phone}}">T: {{client.phoneFormatted}}</a>
                     </li>
                     <li>
-                        <a href="tel:555-779-4407">T: (555) 779-4407</a>
-                    </li>
-                    <li>
-                        <a href="mailto:email@email.com">Click to Email</a>
+                        <a href="mailto:{{client.email}}">Click to Email</a>
                     </li>
                 </ul>
             </div>
