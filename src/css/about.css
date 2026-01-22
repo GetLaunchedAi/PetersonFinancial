@@ -346,21 +346,26 @@
     /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
     font-size: min(2.8vw, .75rem);
     /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
-    width: 32.625em;
+    width: 100%;
+    max-width: 32.625em;
     height: auto;
     order: 2;
     position: relative;
     z-index: 1;
+    margin: 0 auto;
   }
   #sbsr-2370 .cs-picture {
     width: 100%;
     height: auto;
     display: block;
+    overflow: hidden;
+    border-radius: 0.5rem;
   }
   #sbsr-2370 .cs-picture img {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
   }
   #sbsr-2370 .cs-flower {
     width: 75em;
@@ -371,6 +376,16 @@
     left: 50%;
     z-index: -1;
     transform: translateX(-50%);
+    opacity: 0.6;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbsr-2370 .cs-container {
+    max-width: 80rem;
+  }
+  #sbsr-2370 .cs-image-group {
+    max-width: 28rem;
   }
 }
 /* Large Desktop - 1200px */
@@ -382,15 +397,19 @@
   #sbsr-2370 .cs-container {
     max-width: 80rem;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
     position: relative;
     z-index: 1;
+    gap: 3rem;
   }
   #sbsr-2370 .cs-content {
     width: 50%;
+    max-width: 40rem;
     padding-bottom: clamp(3.75rem, 7.82vw, 6.25rem);
+    padding-right: 2rem;
     align-items: flex-start;
+    flex-shrink: 0;
   }
   #sbsr-2370 .cs-topper,
   #sbsr-2370 .cs-title {
@@ -402,33 +421,39 @@
   }
   #sbsr-2370 .cs-title {
     margin-bottom: 2rem;
+    max-width: 100%;
   }
   #sbsr-2370 .cs-image-group {
-    /* set to inherit at Large Desktop */
     font-size: min(1.2vw, 1rem);
+    width: 45%;
+    max-width: 35rem;
     height: auto;
-    order: -1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    min-height: 35rem;
+    order: 2;
+    position: relative;
+    margin: 0;
+    flex-shrink: 0;
   }
   #sbsr-2370 .cs-picture {
     height: 100%;
-    width: auto;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 1;
   }
   #sbsr-2370 .cs-picture img {
     height: 100%;
     width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
   }
   #sbsr-2370 .cs-flower {
-    width: 80vw;
+    width: 60rem;
     max-width: 56.25rem;
+    opacity: 0.4;
   }
 }
 /* Dark Mode */
