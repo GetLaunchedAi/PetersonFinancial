@@ -51,9 +51,13 @@
                     <li>
                         <h2>Contact</h2>
                     </li>
-                    <!-- <li>
-                        <a href="/contact">First Address Line<br>Denver CO 80206</a>
-                    </li> -->
+                    <li>
+                        <a href="{{client.address.mapLink}}" target="_blank">
+                            {{client.address.lineOne}}<br>
+                            {{client.address.lineTwo}}<br>
+                            {{client.address.city}}, {{client.address.county}} {{client.address.postcode}}
+                        </a>
+                    </li>
                     <li>
                         <a href="tel:{{client.phone}}">T: {{client.phoneFormatted}}</a>
                     </li>
