@@ -734,7 +734,7 @@ nav ul li.dropdown.open .dropdown-menu {
     display: inline-block;
     margin: auto;
     width: auto;
-    height: 3.125em;
+    height: 7em;
     margin-bottom: 1.875em;
     text-align: center;
   }
@@ -874,7 +874,7 @@ nav ul li.dropdown.open .dropdown-menu {
   #footer .left-section .logo {
     text-align: left;
     margin-left: 0;
-    height: 4.375rem;
+    height: 9rem;
   }
   #footer .left-section p {
     text-align: left;
